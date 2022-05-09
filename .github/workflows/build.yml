@@ -1,34 +1,33 @@
 name: Build icons
 
 on:
-	push:
-		branches:
-			- master
+    push:
+        branches:
+            - master
 
 env:
-	NODE_VERSION: '16.x'
-	ICONS_DIR: 'icons'
+    NODE_VERSION: '16.x'
+    ICONS_DIR: 'icons'
 
 jobs:
-	build:
-		runs-on: ubuntu-latest
-		steps:
-			- uses: actions/checkout@v2
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
 
-			- name: Setup Node.js
-			  uses: actions/setup-node@v2
-			  with:
-				  node-version: ${{ env.NODE_VERSION }}
-				  cache: 'npm'
+            - name: Setup Node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: ${{ env.NODE_VERSION }}
+                  cache: 'npm'
 
-			- name: npm install
-			  run: |
-				  npm ci
-				  npm run build --if-present
+            - name: npm install
+              run: |
+                  npm ci
+                  npm run build --if-present
 
-			- name: Upload icons as artifact
-			  uses:  actions/upload-artifact@v3
-			  with:
-				  name: 'icons'
-				  path: '${{ env.ICONS_DIR }}'
-
+            - name: Upload icons as artifact
+              uses: actions/upload-artifact@v3
+              with:
+                  name: 'icons'
+                  path: '${{ env.ICONS_DIR }}'
