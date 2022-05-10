@@ -10,23 +10,47 @@ const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 const exists = util.promisify(fs.exists);
 
+interface Component {
+	name: string;
+	file: string;
+}
+
+const prettierOptions = {
+	parser: 'typescript',
+	singleQuote: true,
+	trailingComma: 'all',
+	printWidth: 100,
+	tabWidth: 2,
+	useTabs: false,
+	semi: true,
+	bracketSpacing: true,
+};
+
 export default async function svgToReactComponent(options: { entry: string; output: string }) {
 	const outputDir = path.resolve(options.output);
 	if (!(await exists(outputDir))) {
 		await mkdir(outputDir);
 	}
 
-	await convertAllSvgsToReactComponent(options.entry, options.output);
-
+	const folders = ['.'];
 	const allFilesAndFolders = await readDir(options.entry);
-	const folders = allFilesAndFolders.filter((file) => fs.lstatSync(path.join(options.entry, file)).isDirectory());
+	folders.push(...allFilesAndFolders.filter((file) => fs.lstatSync(path.join(options.entry, file)).isDirectory()));
+
 	for (const folder of folders) {
 		const files = await readDir(path.join(options.entry, folder));
-		if (!files.find((file) => file.endsWith('.svg'))) return;
+
+		const svgFiles = files.filter((file) => file.endsWith('.svg'));
+		if (!svgFiles.length) continue;
+
 		if (!(await exists(path.resolve(options.output, folder)))) {
 			await mkdir(path.resolve(options.output, folder));
 		}
-		await convertAllSvgsToReactComponent(path.join(options.entry, folder), path.join(options.output, folder));
+
+		const components = await convertAllSvgsToReactComponent(
+			path.join(options.entry, folder),
+			path.join(options.output, folder)
+		);
+		await createIndexFile(components, path.resolve(options.output, folder));
 	}
 
 	return {
@@ -34,7 +58,9 @@ export default async function svgToReactComponent(options: { entry: string; outp
 	};
 }
 
-async function convertAllSvgsToReactComponent(entry: string, output: string): Promise<void> {
+async function convertAllSvgsToReactComponent(entry: string, output: string): Promise<array> {
+	const components: Component[] = [];
+
 	const allFilesAndFolders = await readDir(entry);
 	const svgFiles = allFilesAndFolders.filter((file) => file.endsWith('.svg'));
 	for (const svgFile of svgFiles) {
@@ -46,7 +72,20 @@ async function convertAllSvgsToReactComponent(entry: string, output: string): Pr
 			path.resolve(output, componentFileName),
 			componentName
 		);
+		components.push({ name: componentName, file: path.join(output, componentFileName) });
 	}
+
+	return components;
+}
+
+async function createIndexFile(components: Component[], outputDir: string): Promise<void> {
+	const indexFile = path.join(outputDir, 'index.ts');
+	let out = '';
+	for (const component of components) {
+		out += `export { default as ${component.name}} from './${component.name}';\n`;
+	}
+	out = prettier.format(out, prettierOptions);
+	await writeFile(indexFile, out);
 }
 
 async function convertSvgToReactComponent(inputFile: string, outputFile: string, componentName): Promise<void> {
@@ -60,25 +99,19 @@ async function convertSvgToReactComponent(inputFile: string, outputFile: string,
 		title?: string;
 	}
 
-	export const ${componentName} = ({className, color = '#262626', title}: Props) => {
+	const ${componentName} = ({className, color = '#262626', title}: Props) => {
 		return (${svgContent});
-	};`;
+	};
+	
+	export default ${componentName};
+	`;
 
 	out = convertDataAttributesToJsxAttributes(out);
 	out = addProp('fill', 'color', 'path', out);
 	out = addProp('className', 'className', 'svg', out);
 	out = addElement('title', `{title || '${componentName} icon'}`, 'path', out);
 
-	out = prettier.format(out, {
-		parser: 'typescript',
-		singleQuote: true,
-		trailingComma: 'all',
-		printWidth: 100,
-		tabWidth: 2,
-		useTabs: false,
-		semi: true,
-		bracketSpacing: true,
-	});
+	out = prettier.format(out, prettierOptions);
 
 	console.log(`Writing ${outputFile}`);
 	try {
@@ -120,7 +153,6 @@ function addElement(elementName: string, elementContent: string, siblingElement:
 	elementName = camelCase(elementName);
 	const fullElement = `<${elementName}>${elementContent}</${elementName}>`;
 
-	// place the full element before the sibling element
 	const siblingElementIndex = html.indexOf(`<${siblingElement}`);
 	if (siblingElementIndex === -1) {
 		return html.replace(/<\/svg>/, `${fullElement}</svg>`);
