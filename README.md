@@ -1,6 +1,13 @@
-# SVG icons
+# Frokost — A Huddly Icon Library
+## About Frokost
+Tbd
+## How to install
+Tbd.
 
-## Havre
+## Icon packs
+	
+
+### Havre
 | Icon | Name | ESM import |
 | --- | --- | --- |
 | ![Add](src/havre/Add.svg) | Add | `import { Add } from '@huddly/frokost/havre` |

@@ -43,12 +43,19 @@ export default async function svgToReadme(options: { entry: string; output: stri
 		});
 	}
 
-	let readme = `# SVG icons`;
+	let readme = `# Frokost — A Huddly Icon Library ✨
+## About Frokost
+Tbd
+## How to install
+Tbd.
+
+## Icon packs
+	`;
 
 	for (const folder of allSvgFiles) {
 		if (!folder.files.length) continue;
 		if (folder.name !== '.') {
-			readme += `\n\n## ${folder.name}`;
+			readme += `\n\n### ${folder.name}`;
 		}
 
 		readme += `\n| Icon | Name | ESM import |`;
