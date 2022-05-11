@@ -9,6 +9,7 @@ const readDir = util.promisify(fs.readdir);
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 const exists = util.promisify(fs.exists);
+const rm = util.promisify(fs.rm);
 
 interface Component {
 	name: string;
@@ -28,9 +29,11 @@ const prettierOptions = {
 
 export default async function svgToReactComponent(options: { entry: string; output: string }) {
 	const outputDir = path.resolve(options.output);
-	if (!(await exists(outputDir))) {
-		await mkdir(outputDir);
+	// Reset
+	if (await exists(outputDir)) {
+		await rm(outputDir, { recursive: true });
 	}
+	await mkdir(outputDir);
 
 	const folders = ['.'];
 	const allFilesAndFolders = await readDir(options.entry);
