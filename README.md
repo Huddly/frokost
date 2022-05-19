@@ -1,11 +1,15 @@
-# Frokost — A Huddly Icon Library
+# Frokost — A Huddly Icon Library ✨
+
 ## About Frokost
+
 Tbd
+
 ## How to install
+
 Tbd.
 
-## Icon packs
-	
+
+## Icon packages
 
 ### Havre
 | Icon | Name | ESM import |

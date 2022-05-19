@@ -1,7 +1,8 @@
 {
-	"name": "huddly-icons",
+	"name": "@huddly/frokost",
 	"version": "1.0.0",
 	"description": "",
+	"main": "components",
 	"scripts": {
 		"build": "vite build"
 	},

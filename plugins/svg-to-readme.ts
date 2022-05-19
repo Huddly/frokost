@@ -4,6 +4,7 @@ import util from 'util';
 import camelCase from 'camelcase';
 
 const readDir = util.promisify(fs.readdir);
+const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 
 const prettierOptions = {
@@ -17,7 +18,7 @@ const prettierOptions = {
 	bracketSpacing: true,
 };
 
-export default async function svgToReadme(options: { entry: string; output: string }) {
+export default async function svgToReadme(options: { entry: string; output: string; template?: string }) {
 	const outputFile = path.join(options.output);
 
 	const allSvgFiles = [];
@@ -43,34 +44,30 @@ export default async function svgToReadme(options: { entry: string; output: stri
 		});
 	}
 
-	let readme = `# Frokost — A Huddly Icon Library ✨
-## About Frokost
-Tbd
-## How to install
-Tbd.
+	let readmeTemplate = options.template ? await readFile(path.resolve(options.template), 'utf8') : null;
 
-## Icon packs
-	`;
-
+	let declarationOut = '';
 	for (const folder of allSvgFiles) {
 		if (!folder.files.length) continue;
 		if (folder.name !== '.') {
-			readme += `\n\n### ${folder.name}`;
+			declarationOut += `\n\n### ${folder.name}`;
 		}
 
-		readme += `\n| Icon | Name | ESM import |`;
-		readme += `\n| --- | --- | --- |`;
+		declarationOut += `\n| Icon | Name | ESM import |`;
+		declarationOut += `\n| --- | --- | --- |`;
 
 		for (const file of folder.files) {
 			// add img src
 			const image = `![${file.name}](${file.path})`;
 			const ImportName = camelCase(file.name, { pascalCase: true });
 			const esmImport = `import { ${ImportName} } from '@huddly/frokost/${folder.name.toLowerCase()}`;
-			readme += `\n| ${image} | ${file.name} | \`${esmImport}\` |`;
+			declarationOut += `\n| ${image} | ${file.name} | \`${esmImport}\` |`;
 		}
 	}
 
-	await writeFile(outputFile, readme);
+	const readmeOut = readmeTemplate ? readmeTemplate.replace('[icons-declaration]', declarationOut) : declarationOut;
+
+	await writeFile(outputFile, readmeOut);
 
 	return {
 		name: 'svg-to-readme',
