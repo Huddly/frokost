@@ -1,15 +1,18 @@
 # Frokost — A Huddly Icon Library ✨
 
-## About Frokost
-
-Tbd
-
 ## How to install
 
-Tbd.
+Run the following command to install the library:
+
+```bash
+npm install Huddly/frokost --save
+```
+
+_Note that you will need to have access to the Huddly GitHub repository to do this._
+
+## Icon packages and imports
 
 
-## Icon packages
 
 ### Havre
 | Icon | Name | ESM import |
