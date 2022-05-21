@@ -1,0 +1,15 @@
+# Frokost — A Huddly Icon Library ✨
+
+## How to install
+
+Run the following command to install the library:
+
+```bash
+npm install Huddly/frokost --save
+```
+
+_Note that you will need to have access to the Huddly GitHub repository to do this._
+
+## Icon packages and imports
+
+[icons-declaration]
