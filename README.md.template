@@ -8,8 +8,6 @@ Run the following command to install the library:
 npm install Huddly/frokost --save
 ```
 
-_Note that you will need to have access to the Huddly GitHub repository to do this._
-
 ## Icon packages and imports
 
 [icons-declaration]
