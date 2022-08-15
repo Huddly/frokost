@@ -1,21 +1,21 @@
 {
 	"name": "@huddly/frokost",
 	"version": "1.0.0",
-	"description": "",
-	"main": "dist",
+	"description": "A Huddly Icon Library for React",
 	"scripts": {
 		"build": "icons",
 		"readme": "icons readme",
 		"prepare": "npm run build"
 	},
 	"files": [
-		"dist"
+		"granola",
+		"havre",
+		"havre18px"
 	],
 	"pre-commit": [
 		"readme"
 	],
-	"keywords": [],
-	"author": "",
+	"author": "Huddly AS",
 	"license": "ISC",
 	"devDependencies": {
 		"@huddly/icons-transpiler": "github:Huddly/icons-transpiler",
