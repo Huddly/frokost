@@ -23,3 +23,8 @@ components
 *.njsproj
 *.sln
 *.sw?
+
+# Icon pack directories
+granola
+havre
+havre18px
