@@ -21,7 +21,7 @@ npm install Huddly/frokost --save
 | ![Contact](src/granola/Contact.svg) | Contact | `import { Contact } from '@huddly/frokost/granola'` |
 | ![Document](src/granola/Document.svg) | Document | `import { Document } from '@huddly/frokost/granola'` |
 | ![Easy](src/granola/Easy.svg) | Easy | `import { Easy } from '@huddly/frokost/granola'` |
-| ![Ethernet 48px](src/granola/Ethernet%2048px.svg) | Ethernet 48px | `import { Ethernet48Px } from '@huddly/frokost/granola'` |
+| ![Ethernet](src/granola/Ethernet.svg) | Ethernet | `import { Ethernet } from '@huddly/frokost/granola'` |
 | ![Framing](src/granola/Framing.svg) | Framing | `import { Framing } from '@huddly/frokost/granola'` |
 | ![Gallery View](src/granola/Gallery%20View.svg) | Gallery View | `import { GalleryView } from '@huddly/frokost/granola'` |
 | ![Genious Framing](src/granola/Genious%20Framing.svg) | Genious Framing | `import { GeniousFraming } from '@huddly/frokost/granola'` |
@@ -71,7 +71,9 @@ npm install Huddly/frokost --save
 | ![Hide Password](src/havre/Hide%20Password.svg) | Hide Password | `import { HidePassword } from '@huddly/frokost/havre'` |
 | ![Image Quality](src/havre/Image%20Quality.svg) | Image Quality | `import { ImageQuality } from '@huddly/frokost/havre'` |
 | ![Info](src/havre/Info.svg) | Info | `import { Info } from '@huddly/frokost/havre'` |
-| ![Menu](src/havre/Menu.svg) | Menu | `import { Menu } from '@huddly/frokost/havre'` |
+| ![Menu Hamburger](src/havre/Menu%20Hamburger.svg) | Menu Hamburger | `import { MenuHamburger } from '@huddly/frokost/havre'` |
+| ![Menu Kebab](src/havre/Menu%20Kebab.svg) | Menu Kebab | `import { MenuKebab } from '@huddly/frokost/havre'` |
+| ![Menu Meatball](src/havre/Menu%20Meatball.svg) | Menu Meatball | `import { MenuMeatball } from '@huddly/frokost/havre'` |
 | ![Minus](src/havre/Minus.svg) | Minus | `import { Minus } from '@huddly/frokost/havre'` |
 | ![Plus](src/havre/Plus.svg) | Plus | `import { Plus } from '@huddly/frokost/havre'` |
 | ![Portrait Lighting](src/havre/Portrait%20Lighting.svg) | Portrait Lighting | `import { PortraitLighting } from '@huddly/frokost/havre'` |
