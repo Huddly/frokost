@@ -14,6 +14,7 @@ components
 *.local
 
 # Editor directories and files
+.DS_Store
 .vscode/*
 !.vscode/extensions.json
 .idea

@@ -62,10 +62,13 @@ npm install Huddly/frokost --save
 | ![Cross](src/havre/Cross.svg) | Cross | `import { Cross } from '@huddly/frokost/havre'` |
 | ![Delete](src/havre/Delete.svg) | Delete | `import { Delete } from '@huddly/frokost/havre'` |
 | ![Desktop Framing](src/havre/Desktop%20Framing.svg) | Desktop Framing | `import { DesktopFraming } from '@huddly/frokost/havre'` |
+| ![Disconnected](src/havre/Disconnected.svg) | Disconnected | `import { Disconnected } from '@huddly/frokost/havre'` |
 | ![Download](src/havre/Download.svg) | Download | `import { Download } from '@huddly/frokost/havre'` |
 | ![Edit](src/havre/Edit.svg) | Edit | `import { Edit } from '@huddly/frokost/havre'` |
 | ![Ethernet](src/havre/Ethernet.svg) | Ethernet | `import { Ethernet } from '@huddly/frokost/havre'` |
+| ![External Link](src/havre/External%20Link.svg) | External Link | `import { ExternalLink } from '@huddly/frokost/havre'` |
 | ![Filter](src/havre/Filter.svg) | Filter | `import { Filter } from '@huddly/frokost/havre'` |
+| ![Folder](src/havre/Folder.svg) | Folder | `import { Folder } from '@huddly/frokost/havre'` |
 | ![Gallery View](src/havre/Gallery%20View.svg) | Gallery View | `import { GalleryView } from '@huddly/frokost/havre'` |
 | ![Help](src/havre/Help.svg) | Help | `import { Help } from '@huddly/frokost/havre'` |
 | ![Hide Password](src/havre/Hide%20Password.svg) | Hide Password | `import { HidePassword } from '@huddly/frokost/havre'` |
@@ -85,10 +88,13 @@ npm install Huddly/frokost --save
 | ![Show Password](src/havre/Show%20Password.svg) | Show Password | `import { ShowPassword } from '@huddly/frokost/havre'` |
 | ![Speaker Framing](src/havre/Speaker%20Framing.svg) | Speaker Framing | `import { SpeakerFraming } from '@huddly/frokost/havre'` |
 | ![Subtract](src/havre/Subtract.svg) | Subtract | `import { Subtract } from '@huddly/frokost/havre'` |
+| ![Success Filled](src/havre/Success%20Filled.svg) | Success Filled | `import { SuccessFilled } from '@huddly/frokost/havre'` |
+| ![Success](src/havre/Success.svg) | Success | `import { Success } from '@huddly/frokost/havre'` |
 | ![USB](src/havre/USB.svg) | USB | `import { Usb } from '@huddly/frokost/havre'` |
 | ![Update](src/havre/Update.svg) | Update | `import { Update } from '@huddly/frokost/havre'` |
 | ![User](src/havre/User.svg) | User | `import { User } from '@huddly/frokost/havre'` |
 | ![Users](src/havre/Users.svg) | Users | `import { Users } from '@huddly/frokost/havre'` |
+| ![Video Camera](src/havre/Video%20Camera.svg) | Video Camera | `import { VideoCamera } from '@huddly/frokost/havre'` |
 | ![Warning Filled](src/havre/Warning%20Filled.svg) | Warning Filled | `import { WarningFilled } from '@huddly/frokost/havre'` |
 | ![Warning](src/havre/Warning.svg) | Warning | `import { Warning } from '@huddly/frokost/havre'` |
 | ![Wide-angle](src/havre/Wide-angle.svg) | Wide-angle | `import { WideAngle } from '@huddly/frokost/havre'` |
@@ -104,5 +110,7 @@ npm install Huddly/frokost --save
 | ![Chevron Up](src/havre18px/Chevron%20Up.svg) | Chevron Up | `import { ChevronUp } from '@huddly/frokost/havre18px'` |
 | ![Cross](src/havre18px/Cross.svg) | Cross | `import { Cross } from '@huddly/frokost/havre18px'` |
 | ![Info Small](src/havre18px/Info%20Small.svg) | Info Small | `import { InfoSmall } from '@huddly/frokost/havre18px'` |
+| ![Success Filled](src/havre18px/Success%20Filled.svg) | Success Filled | `import { SuccessFilled } from '@huddly/frokost/havre18px'` |
+| ![Success](src/havre18px/Success.svg) | Success | `import { Success } from '@huddly/frokost/havre18px'` |
 | ![Warning Filled](src/havre18px/Warning%20Filled.svg) | Warning Filled | `import { WarningFilled } from '@huddly/frokost/havre18px'` |
 | ![Warning Small](src/havre18px/Warning%20Small.svg) | Warning Small | `import { WarningSmall } from '@huddly/frokost/havre18px'` |
