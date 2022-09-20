@@ -78,6 +78,8 @@ npm install Huddly/frokost --save
 | ![Menu Kebab](src/havre/Menu%20Kebab.svg) | Menu Kebab | `import { MenuKebab } from '@huddly/frokost/havre'` |
 | ![Menu Meatball](src/havre/Menu%20Meatball.svg) | Menu Meatball | `import { MenuMeatball } from '@huddly/frokost/havre'` |
 | ![Minus](src/havre/Minus.svg) | Minus | `import { Minus } from '@huddly/frokost/havre'` |
+| ![Pane Left](src/havre/Pane%20Left.svg) | Pane Left | `import { PaneLeft } from '@huddly/frokost/havre'` |
+| ![Pane Right](src/havre/Pane%20Right.svg) | Pane Right | `import { PaneRight } from '@huddly/frokost/havre'` |
 | ![Plus](src/havre/Plus.svg) | Plus | `import { Plus } from '@huddly/frokost/havre'` |
 | ![Portrait Lighting](src/havre/Portrait%20Lighting.svg) | Portrait Lighting | `import { PortraitLighting } from '@huddly/frokost/havre'` |
 | ![Profile](src/havre/Profile.svg) | Profile | `import { Profile } from '@huddly/frokost/havre'` |
