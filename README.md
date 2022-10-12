@@ -112,6 +112,7 @@ npm install Huddly/frokost --save
 | ![Chevron Up](src/havre18px/Chevron%20Up.svg) | Chevron Up | `import { ChevronUp } from '@huddly/frokost/havre18px'` |
 | ![Cross](src/havre18px/Cross.svg) | Cross | `import { Cross } from '@huddly/frokost/havre18px'` |
 | ![Info Small](src/havre18px/Info%20Small.svg) | Info Small | `import { InfoSmall } from '@huddly/frokost/havre18px'` |
+| ![Settings](src/havre18px/Settings.svg) | Settings | `import { Settings } from '@huddly/frokost/havre18px'` |
 | ![Success Filled](src/havre18px/Success%20Filled.svg) | Success Filled | `import { SuccessFilled } from '@huddly/frokost/havre18px'` |
 | ![Success](src/havre18px/Success.svg) | Success | `import { Success } from '@huddly/frokost/havre18px'` |
 | ![Warning Filled](src/havre18px/Warning%20Filled.svg) | Warning Filled | `import { WarningFilled } from '@huddly/frokost/havre18px'` |
