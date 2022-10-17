@@ -65,6 +65,7 @@ npm install Huddly/frokost --save
 | ![Disconnected](src/havre/Disconnected.svg) | Disconnected | `import { Disconnected } from '@huddly/frokost/havre'` |
 | ![Download](src/havre/Download.svg) | Download | `import { Download } from '@huddly/frokost/havre'` |
 | ![Edit](src/havre/Edit.svg) | Edit | `import { Edit } from '@huddly/frokost/havre'` |
+| ![Envelope](src/havre/Envelope.svg) | Envelope | `import { Envelope } from '@huddly/frokost/havre'` |
 | ![Ethernet](src/havre/Ethernet.svg) | Ethernet | `import { Ethernet } from '@huddly/frokost/havre'` |
 | ![External Link](src/havre/External%20Link.svg) | External Link | `import { ExternalLink } from '@huddly/frokost/havre'` |
 | ![Filter](src/havre/Filter.svg) | Filter | `import { Filter } from '@huddly/frokost/havre'` |
