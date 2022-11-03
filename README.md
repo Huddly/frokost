@@ -45,18 +45,18 @@ npm install Huddly/frokost --save
 ### Havre
 | Icon | Name | ESM import |
 | --- | --- | --- |
-| ![Add user](src/havre/Add%20user.svg) | Add user | `import { AddUser } from '@huddly/frokost/havre'` |
+| ![Add User](src/havre/Add%20User.svg) | Add User | `import { AddUser } from '@huddly/frokost/havre'` |
 | ![Add](src/havre/Add.svg) | Add | `import { Add } from '@huddly/frokost/havre'` |
-| ![Arrow down](src/havre/Arrow%20down.svg) | Arrow down | `import { ArrowDown } from '@huddly/frokost/havre'` |
-| ![Arrow left](src/havre/Arrow%20left.svg) | Arrow left | `import { ArrowLeft } from '@huddly/frokost/havre'` |
-| ![Arrow right](src/havre/Arrow%20right.svg) | Arrow right | `import { ArrowRight } from '@huddly/frokost/havre'` |
-| ![Arrow up](src/havre/Arrow%20up.svg) | Arrow up | `import { ArrowUp } from '@huddly/frokost/havre'` |
+| ![Arrow Down](src/havre/Arrow%20Down.svg) | Arrow Down | `import { ArrowDown } from '@huddly/frokost/havre'` |
+| ![Arrow Left](src/havre/Arrow%20Left.svg) | Arrow Left | `import { ArrowLeft } from '@huddly/frokost/havre'` |
+| ![Arrow Right](src/havre/Arrow%20Right.svg) | Arrow Right | `import { ArrowRight } from '@huddly/frokost/havre'` |
+| ![Arrow Up](src/havre/Arrow%20Up.svg) | Arrow Up | `import { ArrowUp } from '@huddly/frokost/havre'` |
 | ![Calendar](src/havre/Calendar.svg) | Calendar | `import { Calendar } from '@huddly/frokost/havre'` |
 | ![Check](src/havre/Check.svg) | Check | `import { Check } from '@huddly/frokost/havre'` |
-| ![Chevron down](src/havre/Chevron%20down.svg) | Chevron down | `import { ChevronDown } from '@huddly/frokost/havre'` |
-| ![Chevron left](src/havre/Chevron%20left.svg) | Chevron left | `import { ChevronLeft } from '@huddly/frokost/havre'` |
-| ![Chevron right](src/havre/Chevron%20right.svg) | Chevron right | `import { ChevronRight } from '@huddly/frokost/havre'` |
-| ![Chevron up](src/havre/Chevron%20up.svg) | Chevron up | `import { ChevronUp } from '@huddly/frokost/havre'` |
+| ![Chevron Down](src/havre/Chevron%20Down.svg) | Chevron Down | `import { ChevronDown } from '@huddly/frokost/havre'` |
+| ![Chevron Left](src/havre/Chevron%20Left.svg) | Chevron Left | `import { ChevronLeft } from '@huddly/frokost/havre'` |
+| ![Chevron Right](src/havre/Chevron%20Right.svg) | Chevron Right | `import { ChevronRight } from '@huddly/frokost/havre'` |
+| ![Chevron Up](src/havre/Chevron%20Up.svg) | Chevron Up | `import { ChevronUp } from '@huddly/frokost/havre'` |
 | ![Clock](src/havre/Clock.svg) | Clock | `import { Clock } from '@huddly/frokost/havre'` |
 | ![Contact](src/havre/Contact.svg) | Contact | `import { Contact } from '@huddly/frokost/havre'` |
 | ![Cross](src/havre/Cross.svg) | Cross | `import { Cross } from '@huddly/frokost/havre'` |
@@ -101,7 +101,7 @@ npm install Huddly/frokost --save
 | ![Video Camera](src/havre/Video%20Camera.svg) | Video Camera | `import { VideoCamera } from '@huddly/frokost/havre'` |
 | ![Warning Filled](src/havre/Warning%20Filled.svg) | Warning Filled | `import { WarningFilled } from '@huddly/frokost/havre'` |
 | ![Warning](src/havre/Warning.svg) | Warning | `import { Warning } from '@huddly/frokost/havre'` |
-| ![Wide-angle](src/havre/Wide-angle.svg) | Wide-angle | `import { WideAngle } from '@huddly/frokost/havre'` |
+| ![Wide-Angle](src/havre/Wide-Angle.svg) | Wide-Angle | `import { WideAngle } from '@huddly/frokost/havre'` |
 
 ### Havre18px
 | Icon | Name | ESM import |
@@ -121,3 +121,5 @@ npm install Huddly/frokost --save
 | ![Success](src/havre18px/Success.svg) | Success | `import { Success } from '@huddly/frokost/havre18px'` |
 | ![Warning Filled](src/havre18px/Warning%20Filled.svg) | Warning Filled | `import { WarningFilled } from '@huddly/frokost/havre18px'` |
 | ![Warning Small](src/havre18px/Warning%20Small.svg) | Warning Small | `import { WarningSmall } from '@huddly/frokost/havre18px'` |
+
+<style>[data-color-mode="dark"] table td{background:#f5f5f5;}</style>
