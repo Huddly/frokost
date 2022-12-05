@@ -70,6 +70,7 @@ npm install Huddly/frokost --save
 | <img src="src/havre/External%20Link.svg" alt="External Link" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | External Link | `import { ExternalLink } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Filter.svg" alt="Filter" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Filter | `import { Filter } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Folder.svg" alt="Folder" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Folder | `import { Folder } from '@huddly/frokost/havre'` |
+| <img src="src/havre/Framing.svg" alt="Framing" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Framing | `import { Framing } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Gallery%20View.svg" alt="Gallery View" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Gallery View | `import { GalleryView } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Help.svg" alt="Help" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Help | `import { Help } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Hide%20Password.svg" alt="Hide Password" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Hide Password | `import { HidePassword } from '@huddly/frokost/havre'` |
@@ -102,12 +103,15 @@ npm install Huddly/frokost --save
 | <img src="src/havre/Warning%20Filled.svg" alt="Warning Filled" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Warning Filled | `import { WarningFilled } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Warning.svg" alt="Warning" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Warning | `import { Warning } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Wide-angle.svg" alt="Wide-angle" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Wide-angle | `import { WideAngle } from '@huddly/frokost/havre'` |
+| <img src="src/havre/Zoom%20In.svg" alt="Zoom In" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Zoom In | `import { ZoomIn } from '@huddly/frokost/havre'` |
+| <img src="src/havre/Zoom%20Out.svg" alt="Zoom Out" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Zoom Out | `import { ZoomOut } from '@huddly/frokost/havre'` |
 
 ### Havre18px
 | Icon | Name | ESM import |
 | --- | --- | --- |
 | <img src="src/havre18px/Arrow%20Down.svg" alt="Arrow Down" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Arrow Down | `import { ArrowDown } from '@huddly/frokost/havre18px'` |
 | <img src="src/havre18px/Arrow%20Up.svg" alt="Arrow Up" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Arrow Up | `import { ArrowUp } from '@huddly/frokost/havre18px'` |
+| <img src="src/havre18px/Check.svg" alt="Check" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Check | `import { Check } from '@huddly/frokost/havre18px'` |
 | <img src="src/havre18px/Chevron%20Down.svg" alt="Chevron Down" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Chevron Down | `import { ChevronDown } from '@huddly/frokost/havre18px'` |
 | <img src="src/havre18px/Chevron%20Left.svg" alt="Chevron Left" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Chevron Left | `import { ChevronLeft } from '@huddly/frokost/havre18px'` |
 | <img src="src/havre18px/Chevron%20Right.svg" alt="Chevron Right" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Chevron Right | `import { ChevronRight } from '@huddly/frokost/havre18px'` |
