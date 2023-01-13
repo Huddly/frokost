@@ -24,7 +24,7 @@ npm install Huddly/frokost --save
 | <img src="src/granola/Ethernet.svg" alt="Ethernet" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Ethernet | `import { Ethernet } from '@huddly/frokost/granola'` |
 | <img src="src/granola/Framing.svg" alt="Framing" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Framing | `import { Framing } from '@huddly/frokost/granola'` |
 | <img src="src/granola/Gallery%20View.svg" alt="Gallery View" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Gallery View | `import { GalleryView } from '@huddly/frokost/granola'` |
-| <img src="src/granola/Genious%20Framing.svg" alt="Genious Framing" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Genious Framing | `import { GeniousFraming } from '@huddly/frokost/granola'` |
+| <img src="src/granola/Genius%20Framing.svg" alt="Genius Framing" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Genius Framing | `import { GeniusFraming } from '@huddly/frokost/granola'` |
 | <img src="src/granola/Group.svg" alt="Group" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Group | `import { Group } from '@huddly/frokost/granola'` |
 | <img src="src/granola/IQ%20or%20One.svg" alt="IQ or One" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | IQ or One | `import { IqOrOne } from '@huddly/frokost/granola'` |
 | <img src="src/granola/Image%20Processing.svg" alt="Image Processing" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Image Processing | `import { ImageProcessing } from '@huddly/frokost/granola'` |
@@ -51,7 +51,10 @@ npm install Huddly/frokost --save
 | <img src="src/havre/Arrow%20left.svg" alt="Arrow left" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Arrow left | `import { ArrowLeft } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Arrow%20right.svg" alt="Arrow right" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Arrow right | `import { ArrowRight } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Arrow%20up.svg" alt="Arrow up" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Arrow up | `import { ArrowUp } from '@huddly/frokost/havre'` |
+| <img src="src/havre/Brightness%20Max.svg" alt="Brightness Max" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Brightness Max | `import { BrightnessMax } from '@huddly/frokost/havre'` |
+| <img src="src/havre/Brightness%20Min.svg" alt="Brightness Min" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Brightness Min | `import { BrightnessMin } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Calendar.svg" alt="Calendar" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Calendar | `import { Calendar } from '@huddly/frokost/havre'` |
+| <img src="src/havre/Chat.svg" alt="Chat" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Chat | `import { Chat } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Check.svg" alt="Check" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Check | `import { Check } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Chevron%20down.svg" alt="Chevron down" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Chevron down | `import { ChevronDown } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Chevron%20left.svg" alt="Chevron left" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Chevron left | `import { ChevronLeft } from '@huddly/frokost/havre'` |
@@ -75,7 +78,11 @@ npm install Huddly/frokost --save
 | <img src="src/havre/Help.svg" alt="Help" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Help | `import { Help } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Hide%20Password.svg" alt="Hide Password" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Hide Password | `import { HidePassword } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Image%20Quality.svg" alt="Image Quality" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Image Quality | `import { ImageQuality } from '@huddly/frokost/havre'` |
+| <img src="src/havre/Image%20Settings.svg" alt="Image Settings" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Image Settings | `import { ImageSettings } from '@huddly/frokost/havre'` |
+| <img src="src/havre/Image.svg" alt="Image" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Image | `import { Image } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Info.svg" alt="Info" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Info | `import { Info } from '@huddly/frokost/havre'` |
+| <img src="src/havre/Light%20Max.svg" alt="Light Max" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Light Max | `import { LightMax } from '@huddly/frokost/havre'` |
+| <img src="src/havre/Light%20Min.svg" alt="Light Min" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Light Min | `import { LightMin } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Menu%20Hamburger.svg" alt="Menu Hamburger" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Menu Hamburger | `import { MenuHamburger } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Menu%20Kebab.svg" alt="Menu Kebab" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Menu Kebab | `import { MenuKebab } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Menu%20Meatball.svg" alt="Menu Meatball" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Menu Meatball | `import { MenuMeatball } from '@huddly/frokost/havre'` |
@@ -88,6 +95,8 @@ npm install Huddly/frokost --save
 | <img src="src/havre/Profile.svg" alt="Profile" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Profile | `import { Profile } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Refresh.svg" alt="Refresh" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Refresh | `import { Refresh } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Remove.svg" alt="Remove" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Remove | `import { Remove } from '@huddly/frokost/havre'` |
+| <img src="src/havre/Saturation%20Max.svg" alt="Saturation Max" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Saturation Max | `import { SaturationMax } from '@huddly/frokost/havre'` |
+| <img src="src/havre/Saturation%20Min.svg" alt="Saturation Min" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Saturation Min | `import { SaturationMin } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Search.svg" alt="Search" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Search | `import { Search } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Settings.svg" alt="Settings" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Settings | `import { Settings } from '@huddly/frokost/havre'` |
 | <img src="src/havre/Show%20Password.svg" alt="Show Password" style="background-color: #fff; padding: 10px; border-radius: 5px;" /> | Show Password | `import { ShowPassword } from '@huddly/frokost/havre'` |
