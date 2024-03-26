@@ -26,9 +26,6 @@ components
 *.sw?
 
 # Icon pack directories
-granola
-havre
-havre18px
 !src/granola
 !src/havre
 !src/havre18px
