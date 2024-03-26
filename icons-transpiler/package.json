@@ -1,0 +1,37 @@
+{
+	"name": "@huddly/icons-transpiler",
+	"version": "1.0.2",
+	"description": "",
+	"bin": {
+		"icons": "bin/icons"
+	},
+	"scripts": {
+		"build": "tsc",
+		"build-ts": "tsc --declaration",
+		"dev": "tsc --watch",
+		"prepare": "npm run build-ts"
+	},
+	"pre-commit": [
+		"build-ts"
+	],
+	"files": [
+		"bin",
+		"dist"
+	],
+	"keywords": [],
+	"author": "Rostislav Melkumyan",
+	"license": "ISC",
+	"dependencies": {
+		"camelcase": "^6.3.0",
+		"cli-table": "^0.3.11",
+		"esm": "^3.2.25",
+		"prettier": "^2.6.2"
+	},
+	"devDependencies": {
+		"@types/cli-table": "^0.3.0",
+		"@types/node": "^17.0.35",
+		"@types/prettier": "^2.6.1",
+		"pre-commit": "^1.2.2",
+		"typescript": "^4.6.4"
+	}
+}

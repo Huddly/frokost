@@ -3,8 +3,9 @@
 	"version": "1.0.0",
 	"description": "A Huddly Icon Library for React",
 	"scripts": {
-		"build": "icons",
-		"readme": "icons readme",
+		"postinstall": "cd icons-transpiler && npm ci",
+		"build": "./icons-transpiler/icons",
+		"readme": "./icons-transpiler/icons readme",
 		"prepare": "npm run build"
 	},
 	"files": [
